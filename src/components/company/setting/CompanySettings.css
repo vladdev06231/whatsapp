@@ -1,0 +1,25 @@
+
+table tr td {
+    padding: 0.5rem !important;
+}
+
+#tag, #answer {
+    height: 5rem;
+}
+
+.form-switch .form-check-input {
+    background-image: url('./toggleInput.svg') !important;
+    background-color: white !important;
+    width: 4rem !important;
+    height: 1.5rem;
+}
+
+.toggleButton-label {
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 360px) {
+    .toggleButton-label {
+        font-size: 15px;
+    }
+}

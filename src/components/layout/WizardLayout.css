@@ -1,0 +1,179 @@
+
+:root {
+    --white: #FFFFFF;
+    --table-border-color: #DDE6EB;
+    --list-group-bg-color: #001F2B;
+    --page-content-header-font-color: #001F2B;
+    --logout-bg-color: #143440;
+    --page-content-header: 8rem;
+}
+
+a:-webkit-any-link {
+    cursor: default;
+}
+
+/* --------- Toggle Menu --------- */
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+    z-index: 100;
+}
+
+.list-group {
+    background-color: var(--list-group-bg-color);
+    height: 100%;
+    max-height: calc(100% - 8rem);
+    justify-content: space-around;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    height: 100vh;
+    min-height: 570px;
+    margin-left: -5.5rem;
+    transition: margin 0.25s ease-out;
+    z-index: 100;
+}
+
+.sidebar-heading {
+    height: 8rem;
+    background: linear-gradient(45deg, #0077FF 0%, #7DD2FF 100%);
+    width: 5.5rem;
+}
+
+.sidebar-heading h1 {
+    font-size: 2.8125rem;
+    color: var(--white);
+    font-weight: 700;
+    padding: 0.5rem 1.8rem 4rem;
+    margin: 0;
+}
+
+.menu-link {
+    /* padding: 3rem 0; */
+}
+
+.menu-icon {
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.linked-icon {
+    color: rgba(36, 104, 166, 1);
+}
+
+.menu-logout {
+    /* margin: auto auto 1rem; */
+}
+
+.logout-icon {
+    background-color: var(--logout-bg-color);
+    border-radius: 10px;
+    font-size: 3.5rem;
+    padding: 0.8rem;
+}
+
+
+
+.page-content-header {
+    height: var(--page-content-header);
+}
+
+.page-content-header h1, .chat-page-header {
+    color: var(--page-content-header-font-color);
+    font-weight: 600;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
+.chat-page-header {
+    height: var(--page-content-header);
+    /* line-height: var(--page-content-header); */
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.toggle-menu-icon {
+    font-size: 2rem;
+    visibility: visible;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    z-index: 100;
+}
+
+.menu-icon-toggled {
+    /* margin-right: 7rem !important; */
+}
+
+@media (max-width: 576px) {
+    .page-content-header h1 {
+        padding-left: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    /* body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+        margin-left: -5.5rem;
+    } */
+
+    .toggle-menu-icon {
+        visibility: hidden;
+    }
+}
+
+
+/* 
+.toggle-menu-icon-2 {
+    cursor: pointer;
+    position: relative;
+    width: 28px;
+    height: 17px;
+    display: none;
+}
+
+.toggle-menu-icon-2 span {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #354091;
+    display: block;
+    left: 0;
+    top: 2px;
+}
+
+
+.toggle-menu-icon-2 span:nth-child(2) {
+    top: 9px;
+    width: 17px;
+}
+
+.toggle-menu-icon-2 span:last-child {
+    top: 16px;
+    width: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .toggle-menu-icon-2 {
+        height: 25px;
+        display: block;
+    }
+} */

@@ -1,0 +1,49 @@
+
+
+table>:not(:first-child) {
+    border-top: 2px solid var(--table-border-color) !important;
+}
+
+table tr td {
+    padding: 1.2rem !important;
+}
+
+table tr>:last-child {
+    width: 16.6666666%;
+}
+
+.table {
+    --bs-table-striped-bg: rgba(244, 248, 250, 1) !important;
+}
+
+.contact-btn {
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.2rem 2.5rem;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .contact-btn {
+        width: 8rem;
+    }
+}
+
+.add-contact-btn {
+    background-color: rgba(25, 235, 134, 0.83) !important;
+}
+
+.edit-contact-btn {
+    background-color: rgba(20, 133, 255, 0.83) !important;
+}
+
+.delete-contact-btn {
+    background-color: rgba(235, 25, 25, 0.83) !important;
+}
+
+.pagination {
+    width: 100%;
+    justify-content: end !important;
+    margin: 0 !important;
+}

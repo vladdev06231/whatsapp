@@ -1,0 +1,80 @@
+
+.main-content {
+    height: 100vh;
+}
+  
+.main-content > div {
+    height: 100%;
+}
+  
+.left-side {
+  gap: 2vw;
+}
+  
+.right-side {
+    /* min-height: 100vh; */
+    background: linear-gradient(45deg, #0077FF 0%, #7DD2FF 100%);
+}
+.bg-sign {
+    /* width: 100%; */
+}
+.it {
+    font-size: 3vw;
+}
+  
+.sign-description-text {
+    font-size: 2vw;
+}
+  
+.sign-btn:focus {
+    box-shadow: none !important;
+}
+  
+.sign-btn {
+    border-radius: 20px !important;
+    width: 90%;
+    font-weight: 600 !important;
+    gap: 10vw;
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.login-btn {
+    background-color: #6C63FF !important;
+}
+  
+.google-sign-btn {
+    border: 0.5px solid #2D4DBD !important;
+    color: #2D4DBD !important;
+    justify-content: center;
+    font-size: 1rem !important;
+}
+
+.google-sign-btn > div, .google-sign-btn > span {
+    padding: 8px !important;
+}
+
+.google-sign-btn span {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.google-icon {
+    width: 25px;
+    height: 25px;
+    right: 10%;
+}
+  
+  /* .signin-text {
+    bold: 400;
+  } */
+  
+.sign-header {
+    font-weight: 600;
+}
+  
+@media (max-width: 576px) {
+    .to-signup-text {
+        font-size: 16px;
+    }
+}
